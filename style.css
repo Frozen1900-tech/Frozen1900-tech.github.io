@@ -67,6 +67,12 @@ body {
 	text-shadow: 0 0 10px rgb(51, 51, 51, 0.5);
 	transition: color 0.2s;
 }
+h1 {
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 5rem;
+	font-family: "Underdog", sans-serif;
+}
 .titleimagecontainer {
 	width: 100%;
 	height:auto;
@@ -265,11 +271,19 @@ ul {
 }
 
 .contact {
+	display:none;
+
+}
+.contact.is-open { 
+	display: block; 
+	position:absolute;
+	right:0px;
+	bottom:0px;
 	background-image: url(picture/4.gif);
 	background-size: cover;
 	height:500px;
-	width: 300px;
-	margin: 0rem 0rem 0 auto;
+	width: 280px;
+	z-index:20;
 }
 
 .contact p{
@@ -287,4 +301,32 @@ ul {
 	width: 100%;
 	height: auto;
 	display: block;
+}
+
+.credit div{
+	font-size:1.2rem;
+	font-family: 'Underdog', sans-serif;
+	padding: 0px;
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+
+.social {
+ font-size: .85rem;
+ color:rgba(55, 55, 55);
+ margin:0px;
+ padding:0px;
+}
+
+.social a{
+	text-decoration:underline;
+	color:rgba(55, 55, 55);
+}
+
+.spotify{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }

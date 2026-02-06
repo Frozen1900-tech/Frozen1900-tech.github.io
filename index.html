@@ -121,7 +121,43 @@
 					<p>After doing all the above, you will be able to double-click on the application icon and enter the game.</p>
 				</div>
 			</div>
-			
+			<div class="soundtrack" id="soundtrack">
+				<h1>Soundtrack</h1>
+				<div class="spotify">
+				<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0aJPyTCqRBZ6co6EqGdTIj?utm_source=generator" width="200%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>
+				</div>
+			</div>
+
+			<div class="credit" id="credit">
+				<h1>Credits</h1><br>
+				<div>
+					<b>Transnational Crime Organization<br>
+					跨國犯罪組織</b> <br><br><br>
+
+					<p style="font-size:1rem;margin:0px; padding:0px;text-transform: uppercase;">Director / Sound Design / Installation: </p>
+					<p style="font-size:1.5rem;padding:.2rem 0rem .7rem 0rem;margin:0px">Yuxin Hu (栩)</p>
+					<p class="social"><a target="_blank" href="https://yuxinhu.com">yuxinhu.com</a>  | <a target="_blank" href="https://www.instagram.com/frozen1900_/">@frozen1900_</a></p><br>
+
+					<p style="font-size:1rem;margin:0px; padding:0px;text-transform: uppercase;">Technical Artist:</p>
+					<p style="font-size:1.5rem;padding:.2rem 0rem .7rem 0rem;margin:0px">Ivy Xia</p>
+					<p class="social"><a target="_blank" href="https://iriiii.com">iriiii.com</a> | <a target="_blank" href="https://www.instagram.com/irii.xia/">@irii.xia</a></p><br>
+
+					<p style="font-size:1rem;margin:0px; padding:0px;text-transform: uppercase;">3D Modeling: </p>
+					<p style="font-size:1.5rem;padding:.2rem 0rem .7rem 0rem;margin:0px">Eugene Cao</p>
+					<p class="social"><a target="_blank" href="https://www.instagram.com/rubenwkuzxx/">@rubenwkuzxx</a></p><br>
+
+					<p style="font-size:1rem;margin:0px; padding:0px;text-transform: uppercase;">Sound Interaction / Sound Design: </p>
+					<p style="font-size:1.5rem;padding:.2rem 0rem .7rem 0rem;margin:0px">Yuan Feng</p>
+					<p class="social"><a target="_blank" href="https://fredyfeng.com">fredyfeng.com</a> | <a target="_blank" href="https://www.instagram.com/cla_rif/">@cla_rif</a></p><br>
+
+					<p style="font-size:1rem;margin:0px; padding:0px;text-transform: uppercase;">Visual Direction: </p>
+					<p style="font-size:1.5rem;padding:.2rem 0rem .7rem 0rem;margin:0px">Amina Ma</p><br>
+
+					<p style="font-size:1rem;margin:0px; padding:0px;text-transform: uppercase;">Website: </p>
+					<p style="font-size:1.5rem;padding:.2rem 0rem .7rem 0rem;margin:0px">cherrythehuman</p>
+					<p class="social"><a target="_blank" href="https://naisyuanye.com">naisyuanye.com</a> | <a target="_blank" href="https://www.instagram.com/naisyuan_ye/">@naisyuan_ye</a></p><br>
+					</div>
+			</div>
 
 			<div class="contact" id="contact">
 				<p>Email: <a href="mailto:metaphorriver@outlook.com">metaphorriver@outlook.com</a></p>
@@ -135,10 +171,14 @@
 			<a href="#soundtrack">Soundtrack</a>
 			<!-- <a href="#stills">Stills</a> -->
 			<!-- <a href="#display">Display</a> -->
-			<a href="#credit">Credit</a>
-			<a href="#contact">Contact</a>
+			<a href="#credit">Creditsc</a>
+			<a href="#contact" onclick="myContact(); return false;">Contact</a>
 		</nav>
 
-		
+		<script>
+			function myContact() {
+				document.getElementById("contact").classList.toggle("is-open");
+			}
+		</script>
 	</body>
 </html>
