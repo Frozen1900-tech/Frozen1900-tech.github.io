@@ -373,7 +373,7 @@ ul {
 .scrolldown-m {
 	display:none;
 	position:absolute;
-	bottom: 16px;
+	bottom: 10%;
 	left: 50%;
 	transform: translateX(-50%);
 	font-size: 1.2rem;
