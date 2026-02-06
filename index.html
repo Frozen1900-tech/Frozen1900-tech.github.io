@@ -11,7 +11,10 @@
 		<main class="page-content">
 			<div class="titleimagecontainer">
 				<img class="titleimage" src="picture/titleimage.png" alt="titleimage">
+				<h1 class="projecttitle-m">Tserof Sutef《胎動森林》</h1>
+				<p class="scrolldown-m">↓ scroll down ↓</p>
 			</div>
+
 			<div class="synopsis" id="synopsis">
 				<h1>Synopsis</h1>
 				<div class="marquee-wrap">
@@ -45,7 +48,7 @@
 				<div class="download-info">
 					<div style="position: sticky;">
 						<a href="https://drive.google.com/drive/folders/1irUgP5stCUt6t4d06TCbjgtjiJ3HHKjn" target="_blank"><button class="downloadgame">Download</button></a>
-						<p style="color:rgb(74, 74, 74);">*NOTICE: This is just a DEMO version of Tserof Sutef《胎動森林》chapter 1. The team is currently working hard on the full version.</p>
+						<p style="color:rgb(74, 74, 74);">*NOTICE: This is just a DEMO version of <span style="font-family: 'Offside', sans-serif;">Tserof Sutef《胎動森林》</span>chapter 1. The team is currently working hard on the full version.</p>
 						<hr>
 					</div>
 					
@@ -54,14 +57,14 @@
 					<p>To navigate this symbolic world and engage with the shifting reality around you, please use the following controls:</p>
 					<h3>Move &amp; Perspective</h3>
 					<ul>
-						<li>WASD Keys: Use these to move horizontally (W for forward, S for backward, A for left, and D for right).</li>
-						<li>Q / E Keys: Control your verticality. Press Q to ascend and E to descend.</li>
+						<li><span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span> Keys: Use these to move horizontally (W for forward, S for backward, A for left, and D for right).</li>
+						<li><span class="key">Q</span> / <span class="key">E</span> Keys: Control your verticality. Press <span class="key">Q</span> to ascend and <span class="key">E</span> to descend.</li>
 						<li>Mouse: Move the mouse to control your POV (Point of View). Your direction of travel is guided by where you look.</li>
 					</ul>
 					<h3>Interaction</h3>
 					<p>As you explore, you will encounter various floating elements—embryonic forms, luminous neurotransmitters, and introspective mirrors.</p>
 					<ul>
-						<li>F Key: Press F to interact with specific functional objects.</li>
+						<li><span class="key">F</span> Key: Press <span class="key">F</span> to interact with specific functional objects.</li>
 						<li>Environmental Feedback: Interactions are not just mechanical; they trigger immediate changes in sound, brightness, and visibility, reshaping the space based on your choices.</li>
 					</ul>
 					<p>Note: The path becomes certain only through your movement. In this constrained society, your only task is to seek an honest choice.</p>
@@ -165,6 +168,7 @@
 				<p>Email: <a href="mailto:metaphorriver@outlook.com">metaphorriver@outlook.com</a></p>
 			</div>
 		</main>
+		<button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">+</button>
 		<nav class="menu-bar">
 			<a href="#synopsis">Synopsis</a>
 			<a href="#trailer">Trailer</a>
@@ -180,6 +184,13 @@
 		<script>
 			function myContact() {
 				document.getElementById("contact").classList.toggle("is-open");
+			}
+
+			function toggleMenu() {
+				const menu = document.querySelector(".menu-bar");
+				const toggleButton = document.querySelector(".menu-toggle");
+				const isOpen = menu.classList.toggle("is-open");
+				toggleButton.setAttribute("aria-expanded", String(isOpen));
 			}
 		</script>
 	</body>
