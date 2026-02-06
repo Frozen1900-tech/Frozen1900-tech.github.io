@@ -186,12 +186,25 @@
 				document.getElementById("contact").classList.toggle("is-open");
 			}
 
+			function closeMenu() {
+				const menu = document.querySelector(".menu-bar");
+				const toggleButton = document.querySelector(".menu-toggle");
+				menu.classList.remove("is-open");
+				toggleButton.setAttribute("aria-expanded", "false");
+			}
+
 			function toggleMenu() {
 				const menu = document.querySelector(".menu-bar");
 				const toggleButton = document.querySelector(".menu-toggle");
 				const isOpen = menu.classList.toggle("is-open");
 				toggleButton.setAttribute("aria-expanded", String(isOpen));
 			}
+
+			document.querySelectorAll(".menu-bar a").forEach((link) => {
+				link.addEventListener("click", () => {
+					closeMenu();
+				});
+			});
 		</script>
 	</body>
 </html>
