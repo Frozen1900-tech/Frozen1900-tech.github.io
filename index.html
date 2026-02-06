@@ -165,16 +165,18 @@
 			</div>
 
 			<div class="contact" id="contact">
+				<button class="contact-close" type="button" aria-label="Close contact" onclick="myContact()">×</button>
 				<p>Email: <a href="mailto:metaphorriver@outlook.com">metaphorriver@outlook.com</a></p>
 			</div>
+			<div class="contact-overlay" id="contact-overlay" onclick="myContact()"></div>
 		</main>
 		<button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">+</button>
 		<nav class="menu-bar">
 			<a href="#synopsis">Synopsis</a>
 			<a href="#trailer">Trailer</a>
 			<a href="#download">Download</a>
-			<!-- <a href="#blog">Blog</a> -->
 			<a href="#soundtrack">Soundtrack</a>
+			<!-- <a href="#blog">Blog</a> -->
 			<!-- <a href="#stills">Stills</a> -->
 			<!-- <a href="#display">Display</a> -->
 			<a href="#credit">Credits</a>
@@ -184,6 +186,7 @@
 		<script>
 			function myContact() {
 				document.getElementById("contact").classList.toggle("is-open");
+				document.getElementById("contact-overlay").classList.toggle("is-open");
 			}
 
 			function closeMenu() {

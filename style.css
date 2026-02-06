@@ -302,6 +302,24 @@ ul {
 	display:none;
 
 }
+.contact-close {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	border: none;
+	background: rgba(0, 0, 0, 0.45);
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.contact-overlay {
+	display: none;
+}
 .contact.is-open { 
 	display: block; 
 	position:absolute;
@@ -497,8 +515,28 @@ ul {
 	}
 
 	.contact.is-open {
-		width: 220px;
-		height: 380px;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: min(90vw, 320px);
+		height: auto;
+		min-height: 200px;
+		padding: 2.5rem 1rem 1.5rem;
+		border-radius: 16px;
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+	}
+
+	.contact-overlay.is-open {
+		display: block;
+		position: fixed;
+		inset: 0;
+		background: rgba(0, 0, 0, 0.45);
+		z-index: 15;
+	}
+
+	.contact.is-open {
+		z-index: 20;
 	}
 }
 
@@ -527,7 +565,7 @@ ul {
 	}
 
 	.contact.is-open {
-		width: 200px;
-		height: 320px;
+		width: min(92vw, 280px);
+		min-height: 180px;
 	}
 }
